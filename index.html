@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section class=" section-page">
+        <section class="sign-up">
+        <h4 id="conf"> <img src="/confrence/images/logo-full.svg" alt="" width="110px"> <span id="cod"></span></h4>
+        <br />
+        <h1>Your Journey to Coding Conf <br>2025 Starts Here! </h1>
+        <br />
+        <p>Secure your spot at next year's biggest coding conference.</p>
+        <br>
+        <p id="upload-avatar">Upload Avatar</p>
+        <div class="upload-container">
+          <div class="avatar-preview" id="avatarPreview">
+  <label for="fileInput" class="clickable">
+    <img src="/confrence/images/icon-upload.svg" alt="Preview" id="previewImage" />
+  </label>
+  <input type="file" id="fileInput" accept="image/png, image/jpeg" />
+  <div class="avatar-texts">
+    <div class="btn-group" id="buttonGroup" style="display: none;">
+<button onclick="removeImage()">Remove image</button>
+<button onclick="changeImage()">Change image</button>
+</div>
+    <div class="upload-info">
+  <p>Drag and drop or click to upload</p>
+</div>
+</div>
+   </div>
+       </div>
+    
+       <p class="details"><img src="/confrence/images/icon-info.svg" style="vertical-align: middle;" alt=""> <span id="info">Upload your photo (JPG or PNG, max size:500KB)</span></p>
+       <br>
+       <div class="input-name">
+        <p>Full Name</p>
+        <input type="username" name="full-name" id="full-name"  required>
+       </div>
+       <br>
+       <div class="input-email">
+        <p>Email Address</p>
+        <input type="email" id="email-add" name="Email-address" placeholder="Example@email.com" spellcheck="false">
+       </div>
+       <br>
+       <div class="input-git">
+        <p>GitHub Username</p>
+        <input type="text" id="git-username" name="gitHub" placeholder="@yourusername" >
+       </div>
+       <br>
+        <!-- Button section -->
+         <div class="button-generate">
+            <button class="generate" > <a href="generate.html">Generate My Ticket</a></button>
+            <div class="share-buttons" style="margin: 20px 0;">
+  <button class="button share-x" onclick="shareOnX()">Share on X</button>
+</div>
+         </div>
+        </section>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
